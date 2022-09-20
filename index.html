@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <input type="text" style="height: 100px; width: 400px; font-size: 32px"
+    name="parametro-a" value="" placeholder="Parametro A">
+     <input type="text" style="height: 100px; width: 400px; font-size: 32px"
+    name="parametro-b" value="" placeholder="Parametro B">
+
+
+   <input
+            type="text"
+            style="height: 100px; font-size: 40px; width: 420px"
+            name="parametro-a"
+            value=""
+            onchange="handleTextChangeA(event)"
+            placeholder="Este es valor a">
+    <input
+            type="text"
+            style="height: 100px; font-size: 40px; width: 420px"
+            name="parametro-b"
+            value=""
+            onchange="handleTextChangeB(event)"
+            placeholder="Este es valor b">
+
+    <button onclick="sumar()">
+        <p>Suma!</p>
+    </button>
+    <script>
+        let textA;
+        let textB;
+
+        const handleTextChangeA = (event) => {
+            textA = event.target.value;
+        }
+
+        const handleTextChangeB = (event) => {
+            textB = event.target.value;
+        }
+
+        const sumar = () => {
+            console.log(textA*1 + textB*1)
+        }
+
+
+    </script>
+</body>
+
+    
+</body>
+</html>
